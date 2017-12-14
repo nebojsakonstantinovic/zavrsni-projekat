@@ -5,3 +5,56 @@ img{
     max-width: 100%;
     display: block;
 }
+
+.blue{
+    background: #38a4dd;
+}
+
+.white{
+    background: #fff;
+}
+
+.grey{
+    background: #e3e3e3;
+}
+
+/* Picture */
+
+.picture{
+    position: relative;
+}
+
+.picture div{
+    position: absolute;
+    bottom: 20px;
+    right: 20%;
+    color: #fff;
+}
+
+/*skills */
+
+.skills .crte{
+    height: 2px;
+    width: 100%;
+    background: grey;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.skills .crte .bela-crta{
+    height: 2px;
+    width: 80%;
+    background: white;
+    position: absolute;
+}
+
+.skills .crte .bela-crta .tacka{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+}
