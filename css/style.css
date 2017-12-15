@@ -58,3 +58,40 @@ img{
     right: -5px;
     top: -5px;
 }
+
+
+/* ne sredjeno */
+
+/* section 7 */
+
+.section-7{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.section-7 figure{
+    margin: 0;
+}
+
+.section-7 .red-title{
+    background: #f15c5b;
+    padding: 2.5rem;
+}
+
+.section-7 div:last-of-type{
+  padding: 2.5rem;
+  background: white;
+}
+
+/* section 8 */
+
+.section-8 article{
+    background: white;
+    margin-bottom: 1rem;
+}
+
+.section-8 .art-comment{
+    padding: 2rem;
+}
+
+
