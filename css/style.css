@@ -3,6 +3,7 @@
 
 img{
     max-width: 100%;
+    max-height: 100%;
     display: block;
 }
 
@@ -95,3 +96,56 @@ img{
 }
 
 
+/* ne sredjeno  strana portfolio*/
+
+/* section 9 */
+
+.section-9{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.section-9 figure{
+    margin: 0;
+}
+
+.section-9 #problem{
+    height: 260px;    
+}
+
+.section-9 .title{
+    padding: 1rem 2rem;
+}
+
+/* section 9 boje */
+
+.red-title-2{
+    background: #f15c5b;
+} 
+
+.grey-title{
+    background: #6a7484;
+}
+
+.black-title{
+   background: #555157; 
+}
+
+.blue-title{
+    background: #1cbec8;
+}
+
+.yellow-title{
+    background: #f4be18;
+}
+
+/* section 9 boje  kraj*/
+
+.section-9 .tekst-2{
+    padding: 1rem;
+    background: white;    
+}
+
+.section-9 article{
+    margin-bottom: 2rem;   /*promeniti */
+}
