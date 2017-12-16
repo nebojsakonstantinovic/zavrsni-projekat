@@ -3,7 +3,7 @@
 
 img{
     max-width: 100%;
-/*    max-height: 100%;*/
+    /*    max-height: 100%;*/
     display: block;
 }
 
@@ -19,6 +19,41 @@ img{
     background: #e3e3e3;
 }
 
+.box-shadow{
+    box-shadow: 1px 1px 4.75px 0.25px rgba(24, 24, 24, 0.25);
+}
+
+.fa{
+    font-size: 30px;
+}
+
+.granica-1{
+    margin-right: -20px;
+}
+
+.marg-r--20{
+    margin-right: -20px;
+}
+
+.blue-text{
+    color: #38a4dd;
+}
+
+.opacity-w-80{
+    color: rgba(255,255,255,0.8);
+}
+
+section hr{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-right: -2rem;
+}
+
+.marg-b-2rem{
+   margin-bottom: 2rem; 
+}
+
+
 /* Picture */
 
 .picture{
@@ -32,12 +67,70 @@ img{
     color: #fff;
 }
 
+/*icons start */
+
+.icon-position{
+    width: 40px;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.icon-position-2{
+    width: 30px;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.icon-position-3{
+    width: 60px;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.width-80{
+    width: 80px;
+}
+
+.width-64{
+    width: 64px;
+}
+
+.width-42{
+    width: 42px;
+}
+
+/* general ends */
+
+/* aside starts */
+
+aside{
+    padding-right: 20px !important;
+    padding-bottom: 6rem;
+}
+
+aside p{
+    margin-bottom: 0.5rem;
+}
+
+aside hr{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+aside figure{
+  margin-bottom: 2rem;  
+}
+
+
 /*skills */
 
 .skills .crte{
     height: 2px;
     width: 100%;
-    background: grey;
+    background: #1b87c9;
     margin-top: 30px;
     margin-bottom: 30px;
     position: relative;
@@ -57,11 +150,19 @@ img{
     background: white;
     position: absolute;
     right: -5px;
-    top: -5px;
+    top: -4px;
 }
 
+/* aside ends */
 
 /* ne sredjeno */
+
+/* section 1 */
+
+.section-1{
+    margin-top: 1rem;
+}
+
 
 /* section 7 */
 
@@ -80,8 +181,8 @@ img{
 }
 
 .section-7 div:last-of-type{
-  padding: 2.5rem;
-  background: white;
+    padding: 2.5rem;
+    background: white;
 }
 
 /* section 8 */
@@ -128,7 +229,7 @@ img{
 }
 
 .black-title{
-   background: #555157; 
+    background: #555157; 
 }
 
 .blue-title{
