@@ -1,7 +1,11 @@
 
 @media(min-width:576px){
  
+    /* portfolio cards  */
     
+  .card-columns{
+    column-count: 2;    
+}  
     
 }
 
@@ -16,12 +20,20 @@
 
 @media(min-width:992px){
    
+    /* icon  */
     
+  .icon-margin{
+    margin-left: 20px;
+}  
     
 }
 
 @media(min-width:1200px){
    
+    /* icon */
     
+  .icon-margin{
+    margin-left: 25px;
+}  
     
 }

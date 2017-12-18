@@ -53,6 +53,11 @@ section hr{
    margin-bottom: 2rem; 
 }
 
+.padding-y-2rem{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 
 /* Picture */
 
@@ -90,6 +95,10 @@ section hr{
     margin-bottom: 2rem;
 }
 
+.icon-margin{
+    margin-left: auto;
+}
+
 .width-80{
     width: 80px;
 }
@@ -109,6 +118,7 @@ section hr{
 aside{
     padding-right: 20px !important;
     padding-bottom: 6rem;
+    height: 100%;
 }
 
 aside p{
@@ -127,7 +137,7 @@ aside figure{
 
 /*skills */
 
-.skills .crte{
+.skills .blue-bar{
     height: 2px;
     width: 100%;
     background: #1b87c9;
@@ -136,14 +146,15 @@ aside figure{
     position: relative;
 }
 
-.skills .crte .bela-crta{
+.skills .blue-bar .white-bar{
     height: 2px;
-    width: 80%;
+    width: 0%;
     background: white;
     position: absolute;
+    transition: width 3s;
 }
 
-.skills .crte .bela-crta .tacka{
+.skills .blue-bar .white-bar .white-circle{
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -250,3 +261,31 @@ aside figure{
 .section-9 article{
     margin-bottom: 2rem;   /*promeniti */
 }
+
+.section-9 figure{
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    min-height: 300px;
+}
+
+
+/*card */
+
+.card-columns{
+    column-count: 1;    
+}
+
+.card{
+    margin-bottom: 2rem !important;
+}
+
+/* section 5 */
+
+.section-5{
+    margin-top: 1rem;
+}
+
+
+
+
