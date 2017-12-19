@@ -1,6 +1,10 @@
 
 /* General */
 
+.inactive{
+    overflow: hidden;
+}
+
 img{
     max-width: 100%;
     /*    max-height: 100%;*/
@@ -119,6 +123,7 @@ aside{
     padding-right: 20px !important;
     padding-bottom: 6rem;
     height: 100%;
+    position: relative
 }
 
 aside p{
@@ -262,12 +267,12 @@ aside figure{
     margin-bottom: 2rem;   /*promeniti */
 }
 
-.section-9 figure{
+/*.section-9 figure{
     background-size: cover;
     background-position: center center;
     height: 100%;
     min-height: 300px;
-}
+}*/
 
 
 /*card */
@@ -286,6 +291,73 @@ aside figure{
     margin-top: 1rem;
 }
 
+/* navigacija dugme */
 
+.toggle-menu{
+    padding: 5px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 4px;
+    z-index: 10;
+}
 
+.toggle-menu span{
+    display: block;
+    height: 2px;
+    background: #000;
+    margin-bottom: 3px;
+    width: 20px;
+}
 
+.toggle-menu span:last-of-type{
+    margin-bottom: 0;
+}
+
+.menu-overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 15;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.menu{
+    position: fixed;
+    left: -120%;
+    top: 0;
+    z-index: 20;
+    transition: 1s ease;
+     
+}
+
+.menu .side-menu{
+    height: 100vh;
+    background: #777;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.menu .side-menu a{
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.fa-close{
+    position: absolute;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    z-index: 20;
+    top: 0;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
