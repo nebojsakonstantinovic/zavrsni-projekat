@@ -46,7 +46,7 @@ $(document).ready(function () {
 });
 
 
-// masonory mini grid
+// masonory mini grid  (izvan document ready)
 
     /* === ) Mini grid === */
     $(window).on('resize', function () {

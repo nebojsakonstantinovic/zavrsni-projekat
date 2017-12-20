@@ -236,12 +236,12 @@ aside figure{
 
 /* section 9 boje */
 
-.red-title-2{
+/*.red-title-2{
     background: #f15c5b;
 } 
 
 .grey-title{
-    background: #6a7484;
+    background-color: #6a7484;
 }
 
 .black-title{
@@ -254,7 +254,7 @@ aside figure{
 
 .yellow-title{
     background: #f4be18;
-}
+}*/
 
 /* section 9 boje  kraj*/
 
@@ -275,15 +275,15 @@ aside figure{
 }*/
 
 
-/*card */
+/*card !!ne treba   */
 
-.card-columns{
+/*.card-columns{
     column-count: 1;    
 }
 
 .card{
     margin-bottom: 2rem !important;
-}
+}*/
 
 /* section 5 */
 
@@ -291,7 +291,7 @@ aside figure{
     margin-top: 1rem;
 }
 
-/* navigacija dugme */
+/* navigacija i dugme*/
 
 .toggle-menu{
     padding: 5px;
@@ -361,3 +361,6 @@ aside figure{
     font-size: 30px;
     color: #fff;
 }
+
+
+/* navigacija end */
