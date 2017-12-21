@@ -364,3 +364,27 @@ aside figure{
 
 
 /* navigacija end */
+
+.masonery{
+    position: relative;
+}
+
+
+/* mpae ne treba */
+
+#map_wrapper {
+    height: 400px;
+    margin-top: 20px;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* hand */
+
+.hand{
+   cursor: pointer; 
+}

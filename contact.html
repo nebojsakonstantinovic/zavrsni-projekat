@@ -203,10 +203,13 @@
                                 <div class="col-md-10 px-5">
                                     <h2 class="mt-4">Contact</h2>
                                     <!--forma -->
-                                    <form class="contact-form" method="post" action="">
+                                    <form class="contact-form" method="post" action=""> 
                                         <!-- name -->
                                         <div class="form-group">
-                                            <input class="form-control" name="name" value="" placeholder="Name*">
+                                            <div class="input-group">
+                                                <input class="form-control" name="name" value="" placeholder="Name*">
+                                                <span class="input-group-addon fa fa-envelope"></span>
+                                            </div>
                                             <div class="error"></div>
                                         </div>
                                         <!-- email -->
@@ -220,7 +223,7 @@
                                             <div class="error"></div>
                                         </div>
                                         <!-- button -->
-                                        <button class="btn btn-info text-white" type='submit'>Submit</button>
+                                        <button class="btn btn-info text-white hand" type='submit'>Submit</button>
                                     </form>
 
                                 </div>
@@ -329,12 +332,70 @@
         <!-- google maps -->
         <script>
             function myMap() {
-                var mapProp = {
-                    center: new google.maps.LatLng(44.816046, 20.460716),
-                    zoom: 15,
-                };
-                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+                var prvi = {lat: 44.816046, lng: 20.460716};
+
+//                var mapProp = {
+//                    center: new google.maps.LatLng(44.816046, 20.460716),
+//                    zoom: 17
+//                };
+
+
+                var map = new google.maps.Map(document.getElementById('googleMap'), {
+                    zoom: 17,
+                    center: prvi
+                });
+
+
+                //          var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+
+
+                var contentString1 = '<div id="content" class="text-center">' +
+                        '<img  class="img-fluid" style="max-width:260px" src="img/sat.png"></img>' +
+                        '<div id="bodyContent">' +
+                        '<h2 style="margin-top:10px">EKOL Tepisi Beograd</h2>' +
+                        '<p>Smederevski put 45, 11130 Beograd</p>' +
+                        '<p>Tel:011/341-55-05</p>' +
+                        '</div>' +
+                        '</div>';
+
+
+
+                var infowindow1 = new google.maps.InfoWindow({
+                    content: contentString1
+                });
+
+
+                var marker1 = new google.maps.Marker({
+                    position: prvi,
+                    map: map,
+                    title: 'EKOL Tepisi Beograd',
+                    animation: google.maps.Animation.DROP
+                });
+                marker1.addListener('click', function () {
+                    infowindow1.open(map, marker1);
+                });
+
+                marker1.addListener('click', toggleBounce);
+
             }
+
+
+
+
+
+
+            // animacija
+
+            function toggleBounce() {
+                if (marker1.getAnimation() !== null) {
+                    marker1.setAnimation(null);
+                } else {
+                    marker1.setAnimation(google.maps.Animation.BOUNCE);
+                }
+            }
+
         </script>
 
         <!-- api key -->
