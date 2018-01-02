@@ -12,15 +12,22 @@ img{
 }
 
 .blue{
-    background: #38a4dd;
+    background: #bdcdc4;   
+    background: #06397d;
 }
 
 .white{
-    background: #fff;
+    background: #c3d7d9;
+    background: #cedaf5;
+    background: #c3cad9;
+    background: #dde0e7;
+    background: #d0d7e5;
+    background: #dde0e7;
 }
 
 .grey{
-    background: #e3e3e3;
+    background:  #eff1f4; 
+    background:  #e4e9f4; 
 }
 
 .box-shadow{
@@ -123,7 +130,8 @@ aside{
     padding-right: 20px !important;
     padding-bottom: 6rem;
     height: 100%;
-    position: relative
+    position: relative;
+    color: #fff;
 }
 
 aside p{
@@ -145,7 +153,7 @@ aside figure{
 .skills .blue-bar{
     height: 2px;
     width: 100%;
-    background: #1b87c9;
+    background: #758576;
     margin-top: 30px;
     margin-bottom: 30px;
     position: relative;
@@ -192,24 +200,28 @@ aside figure{
 }
 
 .section-7 .red-title{
-    background: #f15c5b;
     padding: 2.5rem;
 }
 
 .section-7 div:last-of-type{
     padding: 2.5rem;
-    background: white;
+    background: #dde0e7;
 }
 
-/* section 8 */
+/* section 8   Comments  */
 
-.section-8 article{
-    background: white;
+.section-8 > article{
+    background: rgba(221, 224, 231, 0.7);
     margin-bottom: 1rem;
+    padding: 1rem;
 }
 
 .section-8 .art-comment{
     padding: 2rem;
+}
+
+.reply{
+    margin-left: 40px;
 }
 
 
@@ -260,7 +272,13 @@ aside figure{
 
 .section-9 .tekst-2{
     padding: 1rem;
-    background: white;    
+    background: #c3d7d9;   
+    background: #cedaf5;
+    background: #c3cad9;
+    background: #dde0e7;
+    background: #d0d7e5;
+    background: #c3cad9;
+    background: #dde0e7;
 }
 
 .section-9 article{
@@ -387,4 +405,44 @@ aside figure{
 
 .hand{
    cursor: pointer; 
+}
+
+
+/* project page */
+
+.project-page figure {
+overflow:hidden;
+}
+
+.project-page a img{
+transition:1s linear;
+}
+
+.project-page a:hover img{
+transform:scale(1.2);
+}
+
+.project-page a{
+    display: block;
+    position: relative;
+    color: white;
+}
+
+.project-page .hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20%;
+    display: none;
+}
+
+.project-page a:hover .hover{
+   display: block; 
+}
+
+.section-11 textarea{
+    resize: none;
 }
