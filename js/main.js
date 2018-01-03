@@ -187,3 +187,5 @@ $(document).ready(function () {
     }
 
     minigrid({container: '.masonery', item: '.masonery > *', gutter: 0});
+    
+    

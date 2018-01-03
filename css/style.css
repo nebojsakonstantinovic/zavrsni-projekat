@@ -1,6 +1,10 @@
 
 /* General */
 
+*{
+    color: #737273;
+}
+
 .inactive{
     overflow: hidden;
 }
@@ -9,6 +13,10 @@ img{
     max-width: 100%;
     /*    max-height: 100%;*/
     display: block;
+}
+
+a{
+    text-decoration: none !important;
 }
 
 .blue{
@@ -23,6 +31,10 @@ img{
     background: #dde0e7;
     background: #d0d7e5;
     background: #dde0e7;
+}
+
+.text-gray{
+    color: #737273;
 }
 
 .grey{
@@ -42,16 +54,34 @@ img{
     margin-right: -20px;
 }
 
+.hr-white{
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .marg-r--20{
     margin-right: -20px;
 }
 
 .blue-text{
-    color: #38a4dd;
+    color: #0a489a;
 }
 
 .opacity-w-80{
     color: rgba(255,255,255,0.8);
+}
+
+/*font size */
+
+.fs-1_2rem{
+    font-size: 1.2rem;
+}
+
+.fs-1_5rem{
+    font-size: 1.5rem;
+}
+
+.fs-35{
+    font-size: 35px;
 }
 
 section hr{
@@ -76,11 +106,24 @@ section hr{
     position: relative;
 }
 
-.picture div{
+.picture .tekst{
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     right: 20%;
     color: #fff;
+    z-index: 200;
+}
+
+.picture .shadow{
+    position: absolute;
+    background: linear-gradient(to top, rgba(0,0,0,0.3), rgba(0, 0, 0, 0.005));
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+}
+
+.font-w600{
+    font-weight: 600;
 }
 
 /*icons start */
@@ -95,7 +138,7 @@ section hr{
 .icon-position-2{
     width: 30px;
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     margin-bottom: 2rem;
 }
 
@@ -134,6 +177,10 @@ aside{
     color: #fff;
 }
 
+aside *{
+   color: #fff; 
+}
+
 aside p{
     margin-bottom: 0.5rem;
 }
@@ -153,7 +200,7 @@ aside figure{
 .skills .blue-bar{
     height: 2px;
     width: 100%;
-    background: #758576;
+    background: rgba(255, 255, 255, 0.4);
     margin-top: 30px;
     margin-bottom: 30px;
     position: relative;
@@ -313,18 +360,19 @@ aside figure{
 
 .toggle-menu{
     padding: 5px;
-    border: 1px solid #000;
+    border: 2px solid #06397d;
     position: absolute;
     top: 20px;
     left: 20px;
     border-radius: 4px;
     z-index: 10;
+    background-color: #06397d;
 }
 
 .toggle-menu span{
     display: block;
     height: 2px;
-    background: #000;
+    background: #fff;
     margin-bottom: 3px;
     width: 20px;
 }
@@ -337,7 +385,7 @@ aside figure{
     position: fixed;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.2);
     z-index: 15;
     top: 0;
     left: 0;
@@ -355,7 +403,7 @@ aside figure{
 
 .menu .side-menu{
     height: 100vh;
-    background: #777;
+    background: #06397d;
     padding: 10px;
     min-width: 200px;
 }
@@ -377,7 +425,7 @@ aside figure{
     top: 0;
     text-align: center;
     font-size: 30px;
-    color: #fff;
+    color: #06397d;
 }
 
 
@@ -424,7 +472,10 @@ transform:scale(1.2);
 
 .project-page a{
     display: block;
-    position: relative;
+    position: relative;  
+}
+
+.project-page a *{
     color: white;
 }
 
