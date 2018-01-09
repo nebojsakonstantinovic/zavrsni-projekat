@@ -24,7 +24,7 @@
             <![endif]-->
     </head>
 
-    <body class="grey">
+    <body class="light-blue">
 
         <!-- navigation starts -->
         <nav class="menu">
@@ -44,7 +44,7 @@
                 <li>
                     <a href="single.html">Single</a>
                 </li>
-                 <li>
+                <li>
                     <a href="contact.html">Contact</a>
                 </li>
             </ul>
@@ -195,7 +195,7 @@
 
                     <article class="">
 
-                        <section class="section-7 white mb-5 pb-2 box-shadow">
+                        <section class="section-7 gray mb-5 pb-2 box-shadow">
 
                             <figure>
                                 <img src="img/salata-1.jpg" alt=""/>
@@ -236,7 +236,9 @@
                             <!--comments bootstrap -->
 
                             <article class="media">
-                                <img class="mr-3" src="img/jenny-doe.jpg" alt="Generic placeholder image" width="64" height="64">
+                                <figure class="mr-3 wrap">
+                                    <img src="img/jenny-doe.jpg" alt="Generic placeholder image">
+                                </figure>
                                 <div class="media-body">
                                     <h5 class="mt-0">Jenny Doe</h5>
                                     <p>February 18, 2015 at 2:56 pm</p>
@@ -246,9 +248,9 @@
                                     </p>
                                     <!--reply -->
                                     <div class="media mt-3">
-                                        <a class="pr-3" href="#">
-                                            <img src="img/john-doe.jpg" alt="Generic placeholder image" width="64" height="64">
-                                        </a>
+                                        <figure class="mr-3 wrap">
+                                            <img src="img/john-doe.jpg" alt="Generic placeholder image">
+                                        </figure>
                                         <div class="media-body">
                                             <h5 class="mt-0">John Doe</h5>
                                             <p>February 18, 2015 at 2:56 pm</p>
@@ -316,34 +318,34 @@
 
 
                         <!-- comment form -->
-                        <section class="section-11 white mb-5 padding-y-2rem box-shadow"> <!-- name map -->                         
+                        <section class="section-11 gray mb-5 padding-y-2rem box-shadow"> <!-- name map -->                         
 
-                                <div class="px-5">
-                                    <h2 class="mt-4">Post a comment</h2>
-                                    <!--forma -->
-                                    <form class="contact-form" method="post" action=""> 
-                                        <!-- name -->
-                                        <div class="form-group">
-                                            <input class="form-control" name="name" value="" placeholder="Name">                                                                                          
-                                            <div class="error"></div>
-                                        </div>
-                                        <!-- email -->
-                                        <div class="form-group">
-                                            <input class="form-control" name="email" value="" placeholder="Email">
-                                            <div class="error"></div>
-                                        </div>
-                                        <!-- message -->
-                                        <div class="form-group">
-                                            <textarea class="form-control" name='text' placeholder="Write Here" rows="6"></textarea>
-                                            <!--                                            <input class="form-control" name="message" value="" placeholder="Write Here">-->
-                                            <div class="error"></div>
-                                        </div>
-                                        <!-- button -->
-                                        <button class="btn btn-info text-white hand" type='submit'>Comment</button>
-                                    </form>
+                            <div class="px-5">
+                                <h2 class="mt-4">Post a comment</h2>
+                                <!--forma -->
+                                <form class="contact-form" method="post" action=""> 
+                                    <!-- name -->
+                                    <div class="form-group">
+                                        <input class="form-control" name="name" value="" placeholder="Name">                                                                                          
+                                        <div class="error"></div>
+                                    </div>
+                                    <!-- email -->
+                                    <div class="form-group">
+                                        <input class="form-control" name="email" value="" placeholder="Email">
+                                        <div class="error"></div>
+                                    </div>
+                                    <!-- message -->
+                                    <div class="form-group">
+                                        <textarea class="form-control" name='text' placeholder="Write Here" rows="6"></textarea>
+                                        <!--                                            <input class="form-control" name="message" value="" placeholder="Write Here">-->
+                                        <div class="error"></div>
+                                    </div>
+                                    <!-- button -->
+                                    <button class="btn btn-info text-white hand" type='submit'>Comment</button>
+                                </form>
 
-                                </div>
-                         
+                            </div>
+
                         </section>
 
 
@@ -424,6 +426,36 @@
 
         </script>
 
+<!--        <script>
+            function resizeWraps() {
+                $('.wrap').height($('.wrap').width());
+                $('.wrap').each(function() {
+                    var width = $(this).width();
+                    var height = $(this).height();
+                    var that = this;
+                    var path = $(this).find('img').attr('src');
+                    $('<img src="'+ path +'" />').on('load', function() {
+                        var imgWidth = $(this)[0].width;
+                        var imgHeight = $(this)[0].height;      
+                        if (imgHeight > height) {
+                            imgHeight = imgHeight / (imgWidth / width);
+                            imgWidth = width;
+                            $(this).css('margin-top', -1 * (imgHeight - height) / 2);
+                        } else {
+                            imgWidth = imgWidth / (imgHeight / height);
+                            imgHeight = height;
+                            $(this).css('margin-left', -1 * (imgWidth - width) / 2);
+                        }
+                        $(that).empty();
+                        $(this).width(imgWidth).height(imgHeight).appendTo(that);
+                    });
+                });
+            }
+            $(window).on('resize', resizeWraps);
+            $(window).on('load', resizeWraps);
+        </script>-->
+        
+        
     </body>
 
 </html>
