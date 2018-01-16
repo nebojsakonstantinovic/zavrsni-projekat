@@ -186,6 +186,14 @@ aside figure{
   margin-bottom: 2rem;  
 }
 
+.email a{
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.email a:hover{
+    color: #fff;
+}
 
 /*skills */
 
@@ -348,16 +356,33 @@ aside figure{
     position: fixed;
     left: -120%;
     top: 0;
-    z-index: 20;
+    z-index: 2000;
     transition: 1s ease;
-     
+    min-width: 260px; 
 }
 
 .menu .side-menu{
     height: 100vh;
     background: #06397d;
-    padding: 10px;
+    padding: 0;
     min-width: 200px;
+}
+
+/* novo css */
+
+.menu .side-menu li{
+    padding: 10px 20px;
+    margin-bottom: 0px;
+}
+
+.menu .side-menu li:hover,
+.actv{
+    background-color: white;
+}
+
+.menu .side-menu li:hover a,
+.actv a{
+    color: #0a489a !important;
 }
 
 .menu .side-menu a{
@@ -438,7 +463,7 @@ transform:scale(1.2);
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 20%;
+    padding: 5% 10%;
     display: none;
 }
 
@@ -458,3 +483,90 @@ transform:scale(1.2);
     display: block;
     overflow: hidden;
 }
+
+
+/*animacije*/
+
+.animation{
+    visibility: hidden;
+    position: relative;
+    transition: 1s linear;
+}
+
+@keyframes slideLeft {
+    0%{
+        opacity:0;
+        transform:translateX(50%);
+    }
+    
+    100%{
+        opacity:1;
+        transform:translateX(0%);
+    }
+}
+
+.slideLeft{
+    animation-name: slideLeft;
+    visibility: visible;
+    animation-duration: 2s;
+}
+
+@keyframes slideRight {
+    0%{
+        opacity:0;
+        transform:translateX(-50%);
+    }
+    
+    100%{
+        opacity:1;
+        transform:translateX(0%);
+    }
+}
+
+.slideRight{
+    animation-name: slideRight;
+    visibility: visible;
+    animation-duration: 1s;
+}
+
+@keyframes slideUp {
+    0%{
+        opacity:0;
+        transform:translateY(50%);
+    }
+    
+    100%{
+        opacity:1;
+        transform:translateY(0%);
+    }
+}
+
+.slideUp{
+    animation-name: slideUp;
+    visibility: visible;
+    animation-duration: 1s;
+}
+
+@keyframes slideDown {
+    0%{
+        opacity:0;
+        transform:translateY(-50%);
+    }
+    
+    100%{
+        opacity:1;
+        transform:translateY(0%);
+    }
+}
+
+.slideDown{
+    animation-name: slideDown;
+    visibility: visible;
+    animation-duration: 1s;
+}
+
+/*animajice kraj*/
+
+
+
+

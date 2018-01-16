@@ -41,8 +41,29 @@ $(document).ready(function () {
         $('.menu').css('left','-110%');
         $('body').removeClass('inactive');
     });
+    
+    
+    //animacije
 
+    function animation() {
+        var windowHeight = $(window).height();
+        var scroll = $(window).scrollTop();
+        $('.animation').each(function () {
+            var pozicija = $(this).offset().top;
+            var animacija = $(this).attr('data-animation');
+            if (pozicija < scroll + windowHeight - 100) {
+                $(this).addClass(animacija);
+            }
+        });
+    }
 
+    animation();
+
+    $(window).scroll(function () {
+        animation();
+    });
+    
+    
 });
 
 
@@ -187,5 +208,9 @@ $(document).ready(function () {
     }
 
     minigrid({container: '.masonery', item: '.masonery > *', gutter: 0});
+    
+
+    
+    
     
     
